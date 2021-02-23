@@ -1,0 +1,45 @@
+#include<iostream>
+
+using namespace std;
+
+class MyClass {
+private:
+	int a;
+public:
+MyClass(int x=0) 
+{
+a = x;
+}
+
+void print() 
+{
+cout << " Printing: " << a << endl;
+}
+
+ MyClass operator+(const MyClass& that);
+
+};
+
+MyClass MyClass::operator+(const MyClass& that){
+MyClass ret(this -> a + that.a);
+return ret;
+}
+
+int main()
+{
+
+MyClass c1(1);
+MyClass c2(2);
+MyClass result;
+
+c1.print();
+c2.print();
+
+result = c1 + c2; 
+result.print();
+
+
+
+
+
+}
