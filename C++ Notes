@@ -155,7 +155,7 @@ Example (C++ style):
 Stack VS Heap:
 
 When an object goes out of scope:
-	Stack: automatically popped out of the stack.  The memory 			is deallocated (freed)
+	Stack: automatically popped out of the stack.  The memory is deallocated (freed)
 	Heap: must be explicitly freed by the programmer
 Example:
 	pC = (struct contact*) malloc(sizeof(struct contact));
@@ -259,7 +259,7 @@ h3 = 4;
 heap is dynamic 
 h1 = new int; 		//new int means dynamic
 
-.capacity() 	//how much a vector can hold rather 				  than how much is in it
+.capacity() 	//how much a vector can hold rather than how much is in it
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Vectors:
